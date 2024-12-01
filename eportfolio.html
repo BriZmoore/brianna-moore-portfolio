@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brianna Moore - ePortfolio</title>
+    <link rel="stylesheet" href="resume.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .profile-pic {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .profile-pic img {
+            border-radius: 50%;
+            width: 200px; /* Increased image size */
+        }
+
+        hr {
+            border: 1px solid #ccc;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Brianna Moore - Computer Science Graduate</h1>
+
+        <div class="profile-pic">
+            <img src="https://theroanokestar.com/wp-content/uploads/2021/10/FC1-1280x853-1.jpg" alt="Brianna Moore">
+        </div>
+
+        <p><strong>Email:</strong> <a href="mailto:BriannaZJMoore@gmail.com">BriannaZJMoore@gmail.com</a></p>
+        <p><strong>Phone:</strong> (540) 243-9171</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/brianna-moore-872396253/">Brianna Moore LinkedIn</a></p>
+
+        <p><span style="color: cornflowerblue;">I am a Computer Science graduate with hands-on experience in software development, data integration, and programming in Java, Python, and C++. I am skilled in building scalable solutions, integrating APIs, and managing databases. I have strong problem-solving abilities and a passion for optimizing data workflows.</span></p>
+
+        <hr>
+
+        <!-- Experience Section -->
+        <div id="experience" class="hidden">
+            <h2>Experience</h2>
+
+            <h3>Junior Software Developer Intern - XYZ Tech Solutions | June 2023 – August 2023</h3>
+            <ul>
+                <li>Developed backend services in Java, improving performance by 15%</li>
+                <li>Implemented API integrations, enabling seamless data transfer between systems</li>
+                <li>Created Python-based data pipelines for accurate data transformation</li>
+                <li>Designed and optimized database schemas, reducing data retrieval times by 30%</li>
+            </ul>
+
+            <h3>Software Development Project - Virginia State University | January 2024 – May 2024</h3>
+            <ul>
+                <li>Designed a solution for syncing data between MySQL and MongoDB, improving data processing efficiency by 25%</li>
+                <li>Built a Python API for real-time data synchronization, reducing manual entry by 40%</li>
+            </ul>
+
+            <h3>Volunteer Developer - Virginia State University Coding Club | September 2023 – May 2026</h3>
+            <ul>
+                <li>Developed an inventory management system with Java and MySQL, improving tracking accuracy</li>
+                <li>Participated in hackathons</li>
+            </ul>
+
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="hidden">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Java, Python, C++</li>
+                <li><strong>Tools:</strong> Git, Eclipse, IntelliJ, PyCharm</li>
+                <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+                <li><strong>Other:</strong> API Development, Data Integration, RESTful Services, Agile Development</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="hidden">
+            <h2>Education</h2>
+            <table>
+                <tr bgcolor="grey">
+                    <th>School</th>
+                    <th>Location</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+                <tr bgcolor="lightgrey">
+                    <td>Virginia State University</td>
+                    <td>Petersburg, VA</td>
+                    <td>August 2022</td>
+                    <td>May 2026</td> <!-- Updated graduation date -->
+                </tr>
+            </table>
+            <p><strong>Relevant Coursework:</strong> Data Structures, Database Management, Software Engineering, Object-Oriented Programming (Java, Python)</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div id="contact-me" class="hidden">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <br><br>
+                <label for="contact">Reason for contact:</label><br>
+                <textarea id="contact" name="contact" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Buttons to Toggle Sections -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="toggleSection('experience')">Experience</button>
+            <button onclick="toggleSection('skills')">Technical Skills</button>
+            <button onclick="toggleSection('education')">Education</button>
+            <button onclick="toggleSection('contact-me')">Contact Me</button>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
